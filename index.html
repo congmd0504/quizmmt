@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+  <title>Quiz Mạng Máy Tính</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="app-header">
+    <h1 class="app-title">📡 Mạng Máy Tính</h1>
+    <div class="header-stats">
+      <span class="stat-pill ok" id="statCorrect">0 ✓</span>
+      <span class="stat-pill warn" id="statNotLearned">0 ⚑</span>
+    </div>
+  </header>
+
+  <!-- SECTION TABS -->
+  <div class="section-tabs" id="sectionTabs">
+    <button class="tab-btn active" data-section="0">Phần 1<br/><small>Câu 1–10</small></button>
+    <button class="tab-btn" data-section="1">Phần 2<br/><small>Câu 11–20</small></button>
+    <button class="tab-btn" data-section="2">Phần 3<br/><small>Câu 21–30</small></button>
+    <button class="tab-btn" data-section="3">Phần 4<br/><small>Câu 31–40</small></button>
+  </div>
+
+  <!-- PROGRESS -->
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progressBar"></div>
+    <span class="progress-text" id="progressText">0 / 10</span>
+  </div>
+
+  <!-- TOOLBAR -->
+  <div class="toolbar">
+    <button class="btn btn-outline btn-sm" id="btnShuffle">🔀 Tráo câu</button>
+    <button class="btn btn-outline btn-sm" id="btnShuffleOpts">🔄 Tráo đáp án</button>
+    <button class="btn btn-outline btn-sm" id="btnShowNotLearned">⚑ Chưa thuộc</button>
+    <button class="btn btn-outline btn-sm" id="btnRestart">↺ Làm lại</button>
+  </div>
+
+  <!-- FILTER BADGE -->
+  <div id="filterBadge" class="filter-badge hidden">
+    Đang xem: <strong>Câu chưa thuộc</strong>
+    <button class="badge-close" id="btnClearFilter">✕ Bỏ lọc</button>
+  </div>
+
+  <!-- QUIZ CARD -->
+  <main class="quiz-main" id="quizMain">
+    <div class="card" id="questionCard">
+      <div class="card-top">
+        <span class="card-num" id="cardNum">Câu 1</span>
+        <div class="card-actions">
+          <button class="btn btn-outline btn-sm btn-reveal" id="btnReveal">👁 Đáp án</button>
+          <button class="btn btn-outline btn-sm btn-mark" id="btnMark">⚑ Chưa thuộc</button>
+        </div>
+      </div>
+      <p class="card-question" id="questionText">Đang tải...</p>
+      <ul class="options-list" id="optionsList"></ul>
+      <div class="card-feedback hidden" id="cardFeedback"></div>
+      <div class="card-note hidden" id="cardNote"></div>
+    </div>
+  </main>
+
+  <!-- NAVIGATION -->
+  <nav class="nav-bar">
+    <button class="nav-btn" id="btnPrev">← Trước</button>
+    <span class="nav-indicator" id="navIndicator">1 / 10</span>
+    <button class="nav-btn nav-btn-next" id="btnNext">Tiếp →</button>
+  </nav>
+
+  <!-- DOT NAVIGATION -->
+  <div class="dot-nav" id="dotNav"></div>
+
+  <!-- RESULT PANEL -->
+  <div class="result-panel hidden" id="resultPanel">
+    <div class="result-box">
+      <div class="result-emoji" id="resultEmoji">🎉</div>
+      <h2 id="resultTitle">Hoàn thành!</h2>
+      <p id="resultDesc"></p>
+      <div class="result-actions">
+        <button class="btn btn-primary" id="btnResultRestart">↺ Làm lại phần này</button>
+        <button class="btn btn-outline" id="btnResultClose">✕ Đóng</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js.js"></script>
+</body>
+</html>

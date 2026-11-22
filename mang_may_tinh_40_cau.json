@@ -1,0 +1,386 @@
+{
+  "title": "BÀI KIỂM TRA TRẮC NGHIỆM MẠNG MÁY TÍNH",
+  "total_questions": 40,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Tầng nào trong mô hình TCP/IP hiệu chỉnh (điều khiển) dòng dữ liệu và hiệu chỉnh lỗi (flow control, and error correction)?",
+      "options": {"A": "Application", "B": "Network", "C": "Transport", "D": "Internet"},
+      "answer": "C",
+      "note": null
+    },
+    {
+      "id": 2,
+      "question": "Một hệ thống mạng của một cơ quan gồm có 150 máy tính nằm trong một tòa nhà trong đó có 3 máy chủ. Tất cả các máy tính đều có thể truy cập lẫn nhau và lấy được tài nguyên trên mạng. Hệ thống trên có tên gọi là gì?",
+      "options": {"A": "WAN", "B": "GAN", "C": "LAN", "D": "MAN"},
+      "answer": "C",
+      "note": null
+    },
+    {
+      "id": 3,
+      "question": "Tầng nào trong mô hình OSI cung cấp kết nối và chọn đường đi giữa hai hệ thống cuối mà ở đó có xảy ra sự định tuyến (routing)?",
+      "options": {"A": "Network layer", "B": "Physical layer", "C": "Transport layer", "D": "Data link layer"},
+      "answer": "A",
+      "note": null
+    },
+    {
+      "id": 4,
+      "question": "Lớp địa chỉ IP nào cung cấp số lượng Hosts ít nhất?",
+      "options": {"A": "Lớp A", "B": "Lớp B", "C": "Lớp C", "D": "Lớp D"},
+      "answer": "C",
+      "note": null
+    },
+    {
+      "id": 5,
+      "question": "Topology mạng được mô tả như thế nào?",
+      "options": {
+        "A": "Đặc điểm của hệ thống mạng",
+        "B": "Kiến trúc của hệ thống mạng",
+        "C": "Cách thức kết nối vật lý của hệ thống mạng",
+        "D": "Phương thức truyền dữ liệu trong hệ thống mạng"
+      },
+      "answer": "C",
+      "note": null
+    },
+    {
+      "id": 6,
+      "question": "Chức năng chính của Switch là gì?",
+      "options": {
+        "A": "Khuếch đại tín hiệu và gửi chuyển tiếp tới cổng đưa ra yêu cầu thu tín hiệu",
+        "B": "Lọc tín hiệu nhiễu, khuếch đại tín hiệu và gửi chuyển tiếp tới cổng đưa ra yêu cầu thu tín hiệu",
+        "C": "Lọc tín hiệu nhiễu, khuếch đại tín hiệu và gửi chuyển tiếp tới tất cả các cổng còn lại của Switch",
+        "D": "Khuếch đại tín hiệu và gửi chuyển tiếp tới tất cả các cổng còn lại của Switch"
+      },
+      "answer": "B",
+      "note": null
+    },
+    {
+      "id": 7,
+      "question": "Chọn cách sắp xếp các tầng trong mô hình OSI theo thứ tự từ thấp đến cao:",
+      "options": {
+        "A": "DataLink, Transport, Session, Presentation",
+        "B": "Network, DataLink, Application, Session",
+        "C": "Network, Transport, Application, Session",
+        "D": "Physical, DataLink, Presentation, Session"
+      },
+      "answer": "A",
+      "note": null
+    },
+    {
+      "id": 8,
+      "question": "Phương pháp CSMA/CD còn có tên gọi nào?",
+      "options": {
+        "A": "Listen before talk (LBT)",
+        "B": "Listen while talk (LWT)",
+        "C": "CSMA",
+        "D": "Token CSMA"
+      },
+      "answer": "B",
+      "note": null
+    },
+    {
+      "id": 9,
+      "question": "Chuyển mạch thông báo và chuyển mạch gói giống nhau:",
+      "options": {
+        "A": "Giới hạn kích thước gói dữ liệu",
+        "B": "Hiệu suất đường truyền không cao",
+        "C": "Thiết lập kênh truyền cố định",
+        "D": "Truyền theo nhiều đường"
+      },
+      "answer": "D",
+      "note": null
+    },
+    {
+      "id": 10,
+      "question": "Trong mô hình mạng dưới đây, các kết nối được sử dụng bằng cáp UTP Cat5. Nhưng máy tính C không thể giao tiếp được với hệ thống. Chuyện gì đã xảy ra?",
+      "options": {
+        "A": "Lỗi hệ điều hành",
+        "B": "Địa chỉ ip không đúng",
+        "C": "Độ dài dây cáp có vấn đề",
+        "D": "Switch sử dụng không hợp lý"
+      },
+      "answer": "C",
+      "note": "Hình mạng không có trong file gốc; đáp án chọn theo suy luận (cáp UTP Cat5 tối đa 100 m)."
+    },
+    {
+      "id": 11,
+      "question": "Phương pháp truy cập đường truyền vật lý nào có cơ chế báo nhận?",
+      "options": {"A": "CSMA", "B": "CSMA/CD", "C": "Token Bus", "D": "Token Ring"},
+      "answer": "D",
+      "note": null
+    },
+    {
+      "id": 12,
+      "question": "Tại sao các mạng lại được tổ chức thành cấu trúc đa tầng?",
+      "options": {
+        "A": "Để tạo sản phẩm mở về mạng",
+        "B": "Để tạo ra một mô hình chuẩn",
+        "C": "Để các nhà xây dựng hệ thống thiết bị phần cứng tuân thủ và xây dựng ra các thiết bị mạng",
+        "D": "Để giảm bớt độ phức tạp trong quá trình thiết kế mạng"
+      },
+      "answer": "D",
+      "note": null
+    },
+    {
+      "id": 13,
+      "question": "Chuyển mạch kênh thực hiện như thế nào?",
+      "options": {
+        "A": "Dựa vào địa chỉ của máy tính được xác định trong gói tin",
+        "B": "Dựa vào một đường truyền cố định được xác định khi liên kết",
+        "C": "Truyền dữ liệu trên nhiều kênh truyền",
+        "D": "Dựa vào một đường truyền cố định được xác định trong hệ thống mạng"
+      },
+      "answer": "B",
+      "note": null
+    },
+    {
+      "id": 14,
+      "question": "Thiết bị Bridge gồm có mấy cổng?",
+      "options": {"A": "2", "B": "4", "C": "8", "D": "12"},
+      "answer": "A",
+      "note": null
+    },
+    {
+      "id": 15,
+      "question": "Đáp án nào là subnet mask?",
+      "options": {"A": "255.248.0.0", "B": "255.0.255.0", "C": "255.255.220.0", "D": "255.244.0.0"},
+      "answer": "A",
+      "note": null
+    },
+    {
+      "id": 16,
+      "question": "Có bao nhiêu mạng con (subnet) dùng được khi chúng ta mượn 4 bit để chia mạng con.",
+      "options": {"A": "16", "B": "30", "C": "32", "D": "14"},
+      "answer": "D",
+      "note": "2^4 − 2 = 14 mạng con dùng được."
+    },
+    {
+      "id": 17,
+      "question": "Giao thức TCP là giao thức...",
+      "options": {
+        "A": "Cấp phát địa chỉ IP",
+        "B": "Không liên kết",
+        "C": "Có liên kết",
+        "D": "Trao đổi dữ liệu giữa các thành phần của mạng"
+      },
+      "answer": "C",
+      "note": null
+    },
+    {
+      "id": 18,
+      "question": "Hãy xác định địa chỉ IP nào là hợp lệ khi sử dụng làm địa chỉ IP cho các máy tính trong mạng",
+      "options": {"A": "10.255.240.255", "B": "127.0.0.0", "C": "192.168.1.255", "D": "10.255.255.255"},
+      "answer": "A",
+      "note": null
+    },
+    {
+      "id": 19,
+      "question": "Sợi cáp xoắn đôi nối giữa Card mạng với Hub thì:",
+      "options": {
+        "A": "Bấm thứ tự 2 đầu giống nhau",
+        "B": "Đổi vị trí các sợi 1, 2 với 3, 6",
+        "C": "Một đầu bấm theo chuẩn T-568A, đầu kia theo chuẩn T568B",
+        "D": "Tất cả đều sai"
+      },
+      "answer": "A",
+      "note": "Cáp thẳng (straight-through)."
+    },
+    {
+      "id": 20,
+      "question": "Đặc điểm của dạng Bus là:",
+      "options": {
+        "A": "Tất cả các nút mạng nối vào một nút mạng trung tâm",
+        "B": "Mỗi nút mạng đều kết nối trực tiếp với tất cả các nút khác",
+        "C": "Các nút mạng sử dụng chung một đường truyền vật lý",
+        "D": "Các nút mạng sử dụng chung một vòng tròn vật lý"
+      },
+      "answer": "C",
+      "note": null
+    },
+    {
+      "id": 21,
+      "question": "Thiết bị mạng nào sau đây là không thể thiếu được trong mạng Internet (là thành phần cơ bản tạo lên mạng Internet)?",
+      "options": {"A": "Hub", "B": "Switch", "C": "Bridge", "D": "Router"},
+      "answer": "D",
+      "note": null
+    },
+    {
+      "id": 22,
+      "question": "Ý nghĩa cơ bản của Domain là gì?",
+      "options": {
+        "A": "Giúp cho người dùng dễ dàng truy cập thông tin trên mạng theo tên miền mà không cần phải nhớ địa chỉ IP",
+        "B": "Cho phép người dùng truy cập thông tin với tốc độ nhanh hơn",
+        "C": "Cho phép quản lý các máy tính trên mạng Internet thuận lợi hơn theo sự phân cấp của tên miền",
+        "D": "Cho phép người dùng xác định vị trí vật lý của các máy tính dễ dàng"
+      },
+      "answer": "A",
+      "note": null
+    },
+    {
+      "id": 23,
+      "question": "Chuẩn nào sử dụng cáp xoắn đôi?",
+      "options": {"A": "100BASE-T", "B": "10BASE5", "C": "100BASE-F", "D": "10BASE2"},
+      "answer": "A",
+      "note": null
+    },
+    {
+      "id": 24,
+      "question": "Trong phương pháp Token Bus, vòng logic được tạo ra để tập hợp các nút mạng",
+      "options": {
+        "A": "Có nhu cầu gửi và nhận thông tin",
+        "B": "Có nhu cầu gửi và không nhận thông tin",
+        "C": "Chỉ có nhu cầu nhận thông tin",
+        "D": "Có nhu cầu gửi thông tin"
+      },
+      "answer": "D",
+      "note": null
+    },
+    {
+      "id": 25,
+      "question": "Cho số đầu tiên của một địa chỉ IP dạng nhị phân: 10001010. Hỏi địa chỉ này thuộc lớp nào?",
+      "options": {"A": "Lớp A", "B": "Lớp B", "C": "Lớp C", "D": "Lớp D"},
+      "answer": "B",
+      "note": "10001010 = 138, nằm trong dải 128–191."
+    },
+    {
+      "id": 26,
+      "question": "Mục đích chính của Router thực hiện công việc gì trong các công việc sau:",
+      "options": {
+        "A": "Định tuyến cho các gói tin trong mạng",
+        "B": "Chuyển tiếp các gói tin trong mạng",
+        "C": "Đọc địa chỉ IP trong các gói tin",
+        "D": "Lưu trữ các địa chỉ IP trong bảng IP của nó"
+      },
+      "answer": "A",
+      "note": null
+    },
+    {
+      "id": 27,
+      "question": "Phương pháp truy cập đường truyền vật lý nào sử dụng vòng vật lý?",
+      "options": {"A": "CSMA", "B": "CSMA/CD", "C": "Token Bus", "D": "Token Ring"},
+      "answer": "D",
+      "note": null
+    },
+    {
+      "id": 28,
+      "question": "Trong mạng máy tính dùng giao thức TCP/IP và Subnet Mask là 255.255.255.224 hãy xác định địa chỉ broadcast của mạng nếu biết rằng một máy tính trong mạng có địa chỉ 197.100.11.171",
+      "options": {"A": "197.100.11.255", "B": "197.100.11.191", "C": "197.100.11.179", "D": "197.100.11.223"},
+      "answer": "B",
+      "note": "Block size 32; 171 thuộc dải 160–191 nên broadcast là .191."
+    },
+    {
+      "id": 29,
+      "question": "Nhược điểm của mạng hình sao là",
+      "options": {
+        "A": "Cần quá nhiều cáp để nối tới nút mạng trung tâm",
+        "B": "Không có khả năng thay đổi khi đã lắp đặt",
+        "C": "Khó khắc phục lỗi và ảnh hưởng tới các nút khác",
+        "D": "Khó cài đặt và bảo trì"
+      },
+      "answer": "A",
+      "note": null
+    },
+    {
+      "id": 30,
+      "question": "Địa chỉ IP nào có thể dùng để gán địa chỉ cho Host khi dùng subnet mask 255.255.255.224",
+      "options": {"A": "196.145.106.127", "B": "195.162.112.64", "C": "201.206.113.160", "D": "201.188.188.157"},
+      "answer": "D",
+      "note": "127 là broadcast; 64 và 160 là địa chỉ mạng; 157 nằm trong dải host 129–158."
+    },
+    {
+      "id": 31,
+      "question": "Qui định về việc thiết kế ra kiến trúc phân tầng thì quan hệ giữa tầng N và tầng N+1 là gì trong các mối quan hệ sau:",
+      "options": {
+        "A": "Tầng N không sử dụng dịch vụ mà tầng N+1 cung cấp",
+        "B": "Tầng N thêm vào các header cho dữ liệu trước khi gửi dữ liệu lên tầng N+1",
+        "C": "Tầng N và tầng N+1 không có liên quan đến nhau",
+        "D": "Tầng N cung cấp các dịch vụ cho tầng N+1"
+      },
+      "answer": "D",
+      "note": null
+    },
+    {
+      "id": 32,
+      "question": "Một hệ thống mạng của một cơ quan gồm có 150 máy tính nằm trong một tòa nhà. Việc chia sẻ thông tin do các từng máy tính quyết định, vậy hệ thống mạng này cần có bao nhiêu máy chủ?",
+      "options": {"A": "0 máy chủ", "B": "1 máy chủ", "C": "2 máy chủ", "D": "3 máy chủ"},
+      "answer": "A",
+      "note": "Mô hình mạng ngang hàng (peer-to-peer)."
+    },
+    {
+      "id": 33,
+      "question": "Chức năng chính của Hub là gì?",
+      "options": {
+        "A": "Khuếch đại tín hiệu và gửi chuyển tiếp tới cổng đưa ra yêu cầu thu tín hiệu",
+        "B": "Khuếch đại tín hiệu và gửi chuyển tiếp tới tất cả các cổng còn lại của Hub",
+        "C": "Lọc tín hiệu nhiễu, khuếch đại tín hiệu và gửi chuyển tiếp tới tất cả các cổng còn lại của Hub",
+        "D": "Lọc tín hiệu nhiễu, khuếch đại tín hiệu và gửi chuyển tiếp tới cổng đưa ra yêu cầu thu tín hiệu"
+      },
+      "answer": "B",
+      "note": null
+    },
+    {
+      "id": 34,
+      "question": "Thẻ bài (Token) là một đơn vị dữ liệu đặc biệt, có nội dung gồm các thông tin",
+      "options": {
+        "A": "Về kiểm soát lỗi và luồng dữ liệu",
+        "B": "Dữ liệu của người sử dụng",
+        "C": "Điều khiển được quy định riêng cho mỗi phương pháp",
+        "D": "Bảng chọn đường"
+      },
+      "answer": "C",
+      "note": null
+    },
+    {
+      "id": 35,
+      "question": "Ngày nay, giao thức chính trong hệ điều hành Windows của Microsoft là giao thức nào?",
+      "options": {"A": "NetBEUI", "B": "IPX/SPX", "C": "TCP/IP", "D": "NetBIOS"},
+      "answer": "C",
+      "note": null
+    },
+    {
+      "id": 36,
+      "question": "Topology Bus sử dụng loại đường truyền (dây dẫn hoặc cáp) nào?",
+      "options": {
+        "A": "Đồng trục dạng mỏng (Thinnet)",
+        "B": "Cáp quang",
+        "C": "Cặp xoắn không bọc (UTP)",
+        "D": "Cặp xoắn có bọc (STP)"
+      },
+      "answer": "A",
+      "note": null
+    },
+    {
+      "id": 37,
+      "question": "Địa chỉ IP 172.17.0.22 / 255.255.255.240 thuộc mạng nào?",
+      "options": {"A": "172.17.0.0", "B": "172.17.0.16", "C": "172.0.0.0", "D": "172.17.0.21"},
+      "answer": "B",
+      "note": "Block size 16; .22 thuộc dải 16–31."
+    },
+    {
+      "id": 38,
+      "question": "Địa chỉ IP dựa vào đâu để xác định lớp (tính từ trái sang phải)?",
+      "options": {"A": "8 bit thứ nhất", "B": "8 bit thứ hai", "C": "8 bit thứ ba", "D": "8 bit thứ tư"},
+      "answer": "A",
+      "note": null
+    },
+    {
+      "id": 39,
+      "question": "Địa chỉ nào sau đây là địa chỉ Broadcast của một mạng lớp B?",
+      "options": {"A": "149.6.255.255", "B": "149.255.0.255", "C": "149.6.7.255", "D": "Không đáp án nào đúng"},
+      "answer": "A",
+      "note": null
+    },
+    {
+      "id": 40,
+      "question": "Điều kiện nào cần phải đảm bảo để 2 máy tính trên mạng có thể kết nối trực tiếp với nhau?",
+      "options": {
+        "A": "Sử dụng cùng hệ điều hành",
+        "B": "Sử dụng cùng một loại phần cứng",
+        "C": "Sử dụng cùng một giao thức",
+        "D": "Do cùng một công ty xây dựng"
+      },
+      "answer": "C",
+      "note": null
+    }
+  ]
+}
