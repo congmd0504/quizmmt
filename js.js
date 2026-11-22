@@ -19,6 +19,7 @@ let answered      = {};       // { id: { chosen, correct, revealed? } }
 let notLearned    = new Set();
 let shuffleOpts   = false;
 let filterMode    = false;    // true = chỉ hiện câu chưa thuộc
+let lastNavTime   = 0;        // chống ghost click sau khi navigate
 
 // ---------- LOAD ----------
 fetch('mang_may_tinh_40_cau.json')
@@ -290,15 +291,23 @@ function onChoose(id, key) {
   renderQuestion();
   updateStats();
 
-  // Kiểm tra hoàn thành phần
   const list = getWorkingList();
   const allDone = list.every(q2 => answered[q2.id]);
+
   if (allDone) {
-    setTimeout(() => showResult(list), 500);
+    setTimeout(() => showResult(list), 600);
+  } else if (correct && currentIndex < list.length - 1) {
+    // Đúng → tự nhảy sang câu tiếp sau 700ms
+    setTimeout(() => {
+      lastNavTime = Date.now();
+      currentIndex++;
+      renderQuestion();
+    }, 700);
   }
 }
 
 function onReveal() {
+  if (Date.now() - lastNavTime < 400) return; // chặn ghost click sau navigate
   const list = getWorkingList();
   if (list.length === 0) return;
   const q = list[currentIndex];
@@ -374,11 +383,11 @@ document.getElementById('btnRestart').addEventListener('click', () => {
 
 // ---------- NAV BUTTONS ----------
 document.getElementById('btnPrev').addEventListener('click', () => {
-  if (currentIndex > 0) { currentIndex--; renderQuestion(); }
+  if (currentIndex > 0) { lastNavTime = Date.now(); currentIndex--; renderQuestion(); }
 });
 document.getElementById('btnNext').addEventListener('click', () => {
   const list = getWorkingList();
-  if (currentIndex < list.length - 1) { currentIndex++; renderQuestion(); }
+  if (currentIndex < list.length - 1) { lastNavTime = Date.now(); currentIndex++; renderQuestion(); }
 });
 
 // Swipe gesture (mobile)
