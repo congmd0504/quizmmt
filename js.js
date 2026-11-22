@@ -332,16 +332,7 @@ document.getElementById('sectionTabs').addEventListener('click', e => {
 
 // ---------- TOOLBAR ----------
 document.getElementById('btnShuffle').addEventListener('click', () => {
-  const original = getSectionQuestions(currentSection);
-  const firstQ   = original[0]; // câu đầu tiên của phần (câu 1, 11, 21, 31)
-  let shuffled   = shuffleArray(original);
-  // Đảm bảo câu đầu tiên luôn ở vị trí 0
-  const pos = shuffled.findIndex(q => q.id === firstQ.id);
-  if (pos !== 0) {
-    shuffled.splice(pos, 1);
-    shuffled.unshift(firstQ);
-  }
-  sectionList  = shuffled;
+  sectionList  = shuffleArray(getSectionQuestions(currentSection));
   currentIndex = 0;
   renderQuestion();
   updateDots();
